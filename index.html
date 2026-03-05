@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>npm - Build amazing things</title>
 </head>
 <body>
     <header>
-        <div>
+        <div class="header-top">
             <img src="images/black-heart.png" alt="black heart" class="blackHeart" />
             <span> Nifty Penguin Magic</span>
         </div>
@@ -21,14 +22,16 @@
                 <li><a href="#">Support</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="header-bottom">
             <img src="images/npm-logo.png" alt="npm logo" class="npmLogo" />
-            <img src="images/magnifying-glass.png" alt="search icon" class="searchIcon" />
-            <input type="text" placeholder="Search packages">
-            <button>Search</button>
+            <form>
+                <img src="images/magnifying-glass.png" alt="search icon" class="magnifyingGlass" />
+                <input type="text" placeholder="Search packages">
+                <button>Search</button>
+            </form>
             <div class="authLinks">
-                <a href="#">Join</a>
-                <a href="#">Sign in</a>
+                <a id="join-link" href="#">Join</a>
+                <a id="login-link" href="#">Log In</a>
             </div>
         </div>
     </header>
